@@ -1,0 +1,44 @@
+div {
+    border: 2px solid #333;
+    border-style: dashed;
+}
+
+#editorDiv {
+    height: 90vh;
+    width: 100vw;
+}
+
+#cataloguesBarPlaceHolder {
+    overflow-x: hidden;
+}
+
+.panel-heading.creation {
+    width: 190px;
+}
+
+.creation {
+    width: 150px;
+}
+
+.inline {
+    display: inline;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.quickEditable {
+    background-color :  rgba(240,240,240,0.9);
+    padding : 3px;
+}
+
+.dropZone {
+    height: 10px;
+    width: 200px;
+    background: #dfdfdf;
+}
+
+.dropZone.hovered {
+    background: #aaa;
+}

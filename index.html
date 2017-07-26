@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="Plugins/jqueryUI/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="Plugins/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="Plugins/bootstrap/css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="Plugins/jquery.splitter/jquery.splitter.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+            <script type="text/javascript" src="Plugins/jquery/jquery-2.2.1.js"></script>
+            <script type="text/javascript" src="Plugins/jqueryUI/jquery-ui.1.12.1.js"></script>
+            <script type="text/javascript" src="Plugins/bootstrap/js/bootstrap.js"></script>
+            <script type="text/javascript" src="Plugins/jquery.splitter/jquery.splitter.js"></script>
+
+        <script>if (window.module) module = window.module;</script>
+
+
+        <script>require('./js/script.js');</script>
+    </head>
+    <body>
+		<div id="appMenuPlacerHolder">
+            <div class="dropdown inline">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span><span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a id="open_from_menu" href="javascript:void(0)"><span class="glyphicon glyphicon-folder-open"></span> Charger ...</a></li>
+                    <li><a id="saveAs_from_menu" href="#"><span class="glyphicon glyphicon-floppy-disk"></span> Sauvegarder vers ...</a></li>
+                    <li class="divider"></li>
+                    <li><a id="print_from_menu" href="#"><span class="glyphicon glyphicon glyphicon-print"></span> Imprimer</a></li>
+                </ul>
+            </div>
+            <button id="save_from_quickBar" class="btn btn-info">
+                <span class="glyphicon glyphicon-floppy-disk"></span>
+            </button>
+        </div>
+        <div id="currentFileDocAdrBarPlaceHolder">
+        </div>
+        <div id="editorDiv">
+            <div id="cataloguesBarPlaceHolder" class="inlineBlock">
+            </div>
+            <div id="tabsSystemPlaceHolder" class="inlineBlock">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+	<!ELEMENT document (ANY)>
+	<!ELEMENT page (ANY)>
+		<!ATTLIST page type CDATA #REQUIRED>
+	<!ELEMENT root (ANY)>
+		<!ATTLIST root autorisedChildTypes CDATA #REQUIRED>
+
+	<!ELEMENT if (ANY)>
+		<!ATTLIST if conditionExpression CDATA #REQUIRED>
+	<!ELEMENT else (ANY)>
+	<!ELEMENT ifElse (ANY)>
+		
+	<!ELEMENT while (ANY)>
+		<!ATTLIST while conditionExpression CDATA #REQUIRED>
+	<!ELEMENT until (ANY)>
+		<!ATTLIST until conditionExpression CDATA #REQUIRED>
+	<!ELEMENT doWhile (ANY)>
+		<!ATTLIST doWhile conditionExpression CDATA #REQUIRED>
+	<!ELEMENT doUntil (ANY)>
+		<!ATTLIST doUntil conditionExpression CDATA #REQUIRED>
+
+	<!ELEMENT functionDeclaration (ANY)>
+		<!ATTLIST functionDeclaration functionName CDATA #REQUIRED inputParameters CDATA #REQUIRED returnType CDATA #REQUIRED returnValue CDATA #REQUIRED>
+	<!ELEMENT procedureDeclaration (ANY)>
+		<!ATTLIST procedureDeclaration procedureName CDATA #REQUIRED inputParameters CDATA #REQUIRED>
+
+		
+	<!ELEMENT arrayDeclaration (EMPTY)>
+		<!ATTLIST arrayDeclaration variableName CDATA #REQUIRED dimensionAndSize CDATA #REQUIRED arrayType CDATA #REQUIRED>
+	<!ELEMENT assignment (EMPTY)>
+		<!ATTLIST assignment variableName CDATA #REQUIRED expression CDATA #REQUIRED>
+	<!ELEMENT spVariableDeclaration (EMPTY)>
+		<!ATTLIST spVariableDeclaration variableName CDATA #REQUIRED variableType CDATA #REQUIRED>
+	<!ELEMENT read (EMPTY)>
+		<!ATTLIST page variableName CDATA #REQUIRED>
+	<!ELEMENT write (EMPTY)>
+		<!ATTLIST page expression CDATA #REQUIRED>
+	<!ELEMENT functionCall (EMPTY)>
+	<!ELEMENT procedureCall (EMPTY)>

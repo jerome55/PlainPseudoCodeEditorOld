@@ -1,0 +1,11 @@
+{
+  "name": "tfe_pseudocode_editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/script.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
